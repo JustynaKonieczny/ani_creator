@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<table class="table">
+  <thead>
+  <tr>#</tr>
+  <tr>Name</tr>
+  </thead>
+  <tbody>
+    {% for person in peoples %}
+     <tr>
+      <th>{{ loop.index }} </th>
+      <th>{{ person.name }}</th>
+    {% endfor %}
+  </tbody>
+</table>
+ 
+{% endblock %}
